@@ -1,0 +1,41 @@
+<!--THIS IS A POST TEMPLATE --- The Header has been set up so that even from the Posts folder, it can still connect to
+the Styles sheet, as well as use the NavbarFooterScript.js necessary for layout and design. The main article body uses
+specific div ids for the same reason, don't change them. 
+
+The Article tag is used by the recentandallposts.js to scoop out ONLY the HTML dada used for the post, and stick it on
+the home page. No need to change that either!
+
+!!!REMEMBER!!! When you go to create a new post, the name of the HTML file must follow this format -> YYYY-MM-DDtitle.html
+You can then add the file name and article title to the allposts.json file, which will automatically arrange the posts
+by date in the all-posts.html page, as well as choose the most recent article for the homepage automatically. You can call
+the article whatever you like, but the actual file name must be in the correct format-->
+
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+	<meta charset="UTF-8">
+  <title>[a human endeavour]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link id="stylesheet" rel="stylesheet" href="/Personal Site/light-mode.css">
+  <link rel="icon" href="./resources/favicon.ico">
+  <script src="/Personal Site/resources/NavbarFooterScript.js" defer></script>
+  <script src="/Personal Site/resources/recentandallposts.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div id="topbluebar">.</div>
+    <div id="navbar"></div>
+      <div class="reader">
+        <article>
+         <h2>My Latest Blog Post</h2>
+         <p>This is the content of the most recent blog post!</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </article>
+      </div>
+      <div id="bottombluebar">.</div>
+  </main>
+  <div id="footer"></div>
+</body>
+</html>
