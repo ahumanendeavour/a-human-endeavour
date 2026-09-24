@@ -1,0 +1,126 @@
+/* Responsive, turns row to collumn at 700 px*/
+@media (max-width: 700px) {
+    main {
+      display: flex;
+    }
+    #intro {
+      border-top: none;
+      border-bottom: none;
+    }
+    main {
+      padding: 3%;
+      margin: 0%;
+      border-left: none;
+      border-right: none;
+    }
+    .reader {
+      margin: 10px;
+    }
+    article {
+      margin: 0%;
+      padding: 0%;
+    }
+  
+    #features {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      max-height: fit-content;
+    }
+    
+    #latestBlogPosts {
+      width: 100%;
+    }
+    
+    #whatsNew {
+      width: 85%;
+      line-break: auto;
+      background-color: var(--background-color);
+    }
+  
+    #banner {
+      
+      grid-column-start: 0;
+      grid-column-end: 3;
+      
+    }
+    #intro {
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+  
+    #sitetitle {
+      margin-top: 13px;
+      font-size: 30px;
+      margin-left: 10px;
+    }
+  
+    #navbar {
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding: 0px;
+      font-size: medium;
+    }
+  
+    #navbar li {
+      display: inline-block;
+      padding: 0px;
+      margin: 5px;
+    }
+  
+    article p {
+      font-size: 17px;
+    }
+  
+    .reader,
+    #all-posts {
+      grid-column-start: 0;
+      grid-column-end: 3;
+    }
+  
+    .reader ul {
+      padding-left: 2rem;
+    }
+    .reader li {
+      list-style: inside;
+      list-style-type: square;
+      color: var(--text-colour);
+    }
+  
+    #footer {
+      text-align: center;
+      border: none;
+    }
+  
+    #contact {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding: 10px;
+    }
+  
+    #dirbody {
+      flex-direction: column;
+    }
+  
+    #dirnav {
+      display: inline;
+    }
+    #dirnav ul {
+      display: inline;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+  
+    #whatsNew {
+      max-height: 15em;
+      overflow: scroll;
+     
+      width:95%
+    }
+  
+    
+  }
+  

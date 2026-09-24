@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <title>[about]</title>
+    <meta
+      name="description"
+      content="Where the creative life, and the every-day meet."
+    />
+    <meta
+      name="keywords"
+      content="creative, creativity, art, theatre, hobby, hobbies, acting, drama school"
+    />
+    <meta name="author" content="ahe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/master.css" media="all" />
+    <link rel="icon" href="/resources/favicon.ico" />
+    <script src="/navbarfooterscript.js" defer></script>
+    <script src="/recentandallposts.js" defer></script>
+    <link
+      rel="webmention"
+      href="https://webmention.io/a-human-endeavour.com/webmention"
+    />
+    <style></style>
+  </head>
+
+  <body>
+    <main style="color: var(--text-colour)">
+      <h2>Guestbook</h2>
+      <p>
+        Feel free to sign the guestbook. All entries are reviewed before
+        posting, so they won't go up immediately.
+      </p>
+
+      <script
+        async
+        src="https://guestbooks.meadow.cafe/resources/js/embed_script/900/script.js"
+      ></script>
+
+      <!-- Guestbook Form -->
+      <div id="guestbooks___guestbook-form-container">
+        <form
+          id="guestbooks___guestbook-form"
+          action="https://guestbooks.meadow.cafe/guestbook/900/submit"
+          method="post"
+          style="border-radius: 15px; padding: 10px"
+        >
+          <div class="guestbooks___input-container">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+              style="color: var(--text-colour)"
+            />
+          </div>
+
+          <div class="guestbooks___input-container">
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="Website (optional)"
+              style="color: var(--text-colour)"
+            />
+          </div>
+
+          <div
+            id="guestbooks___challenge-answer-container"
+            style="color: var(--text-colour)"
+          ></div>
+
+          <div class="guestbooks___input-container">
+            <textarea
+              id="text"
+              name="text"
+              placeholder="Leave your message here..."
+              rows="4"
+              style="
+                width: 100%;
+                box-sizing: border-box;
+                resize: vertical;
+                color: var(--text-colour);
+              "
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" style="color: var(--text-colour)">
+            Sign Guestbook
+          </button>
+          <div id="guestbooks___error-message"></div>
+        </form>
+      </div>
+
+      <!-- Messages Section -->
+
+      <h3
+        id="guestbooks___guestbook-messages-header"
+        style="color: var(--text-colour)"
+      >
+        [Messages]
+      </h3>
+      <div id="guestbooks___guestbook-messages-container"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
