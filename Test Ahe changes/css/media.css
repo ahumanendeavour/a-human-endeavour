@@ -1,0 +1,49 @@
+/* MEDIA */
+
+img {
+  display: block;
+  margin-inline: auto;
+}
+figure {
+  margin-inline: var(--gap);
+}
+figcaption {
+  text-align: center;
+  blockquote + &::before {
+    content: "\2014 \a0"; /* em dash + non-breaking space */
+  }
+}
+.gallery {
+  --gallery-cols: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--gallery-cols), 1fr);
+  gap: calc(2rem / var(--gallery-cols));
+  padding-left: 0;
+  list-style-type: "";
+  &:has(:nth-child(2)) {
+    --gallery-cols: 2;
+  }
+  &:has(:nth-child(5)) {
+    --gallery-cols: 3;
+  }
+  &:has(:nth-child(10)) {
+    --gallery-cols: 4;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+iframe {
+  max-inline-size: 100%;
+  display: block;
+  margin-block: 1rem;
+  border: var(--line);
+}
+
+.visually-hidden {
+  display: none;
+}

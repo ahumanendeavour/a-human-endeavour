@@ -1,0 +1,26 @@
+body {
+  max-width: 51rem;
+  margin: auto;
+  background-color: var(--background-colour);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

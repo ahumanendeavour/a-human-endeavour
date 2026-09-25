@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>[a human endeavour]</title>
+
+    <meta
+      name="description"
+      content="Where the creative life, and the every-day meet."
+    />
+    <meta
+      name="keywords"
+      content="creative, creativity, art, theatre, hobby, hobbies, acting, drama school"
+    />
+    <meta name="author" content="ahe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/master.css" />
+    <link rel="icon" href="resources/favicon.ico" />
+
+    <!-- IndieWeb -->
+    <link rel="me" href="https://github.com/ahumanendeavour" />
+    <link
+      rel="webmention"
+      href="https://webmention.io/a-human-endeavour.com/webmention"
+    />
+    <link
+      rel="pingback"
+      href="https://webmention.io/a-human-endeavour.com/xmlrpc"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed"
+      href="/rss.xml"
+    />
+
+    <!-- Scripts -->
+    <script src="navbarfooterscript.js" defer></script>
+    <script src="home.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Hidden h-card (valid location now) -->
+    <div class="p-author h-card visually-hidden">
+      <a
+        rel="author"
+        class="u-url u-uid"
+        href="https://a-human-endeavour.com"
+      ></a>
+      <p class="p-note">Where the creative life, and the every-day meet.</p>
+      <img class="u-photo" src="/resources/favicon.ico" alt="ahe" />
+      <span class="p-name">
+        <span class="p-given-name">AHE</span>
+        <span class="p-family-name">.</span>
+      </span>
+    </div>
+
+    <nav></nav>
+
+    <main>
+      <section class="reader" id="mostRecent">
+        <article id="latest-post"></article>
+      </section>
+
+      <!--<section class="reader" id="features">-->
+      <section class="reader" id="latestBlogPosts">
+        <h2>Latest posts…</h2>
+        <ul id="posts-list"></ul>
+      </section>
+
+      <!--<section class="reader" id="whatsNew">
+          <h2>What's New</h2>
+        </section>
+      </section>-->
+
+      <section class="reader" id="contactInfo">
+        <h3>Get in touch…</h3>
+        <ul>
+          <li>
+            Follow me on
+            <a href="https://bsky.app/profile/ahumanendeavour.bsky.social"
+              >Bluesky</a
+            >
+          </li>
+          <li>
+            Message me via
+            <a href="mailto:ahumanendeavour@outlook.com">Email</a>
+          </li>
+          <li>
+            Subscribe via
+            <a href="/rss.xml" download alt="RSS">RSS</a>
+          </li>
+          <form
+            id="webmention-form"
+            action="https://webmention.io/ahumanendeavour.com/webmention"
+            method="POST"
+          >
+            <li>
+              <label for="webmention-form"
+                >Linked to AHE? Link your post here.</label
+              >
+            </li>
+
+            <input
+              id="webmention-source"
+              type="url"
+              autocomplete="url"
+              required=""
+              pattern="^https?:\/\/(.*)"
+              name="source"
+              placeholder="URL/Permalink of your article"
+              class="error"
+              aria-invalid="true"
+              style="width: 200px"
+            />
+
+            <input
+              id="webmention-submit"
+              type="submit"
+              name="submit"
+              value="Ping me!"
+            />
+            <input
+              id="webmention-format"
+              type="hidden"
+              name="format"
+              value="html"
+            />
+            <input
+              id="webmention-target"
+              type="hidden"
+              name="target"
+              value=""
+            />
+          </form>
+        </ul>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
