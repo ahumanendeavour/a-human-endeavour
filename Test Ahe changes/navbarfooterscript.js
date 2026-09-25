@@ -10,7 +10,7 @@ const navbarHTML = `
         <li><a href="../">[home]</a></li>
         <li><a href="/about">[about]</a></li>
         <li><a href="/all-posts">[posts]</a></li>
-        <li><a href="/dir">[scraps]</a></li>
+        <li><a href="/scrapbook">[scrapbook]</a></li>
       </ul>
   `;
 
